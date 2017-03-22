@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_theme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.suraj.hangman.theme">
+
+    <TextView
+        android:text="SELECT THEME:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/theme"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:text="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start"
+        android:layout_below="@+id/rg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="start"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/theme"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:text="Movies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movies"
+            android:checked="true"
+            android:layout_weight="1"
+            android:textColorLink="@android:color/holo_blue_dark"
+            app:buttonTint="@android:color/holo_blue_dark" />
+
+        <RadioButton
+            android:text="Cricketers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cricketers"
+            android:layout_weight="1"
+            app:buttonTint="@android:color/holo_blue_dark"
+            />
+
+        <RadioButton
+            android:text="Animals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/animals"
+            android:layout_weight="1"
+            app:buttonTint="@android:color/holo_blue_dark"/>
+
+        <RadioButton
+            android:text="Countries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/countries"
+            android:layout_weight="1"
+            app:buttonTint="@android:color/holo_blue_dark"/>
+
+        <RadioButton
+            android:text="TV Series"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvseries"
+            android:layout_weight="1"
+            app:buttonTint="@android:color/holo_blue_dark"/>
+    </RadioGroup>
+</RelativeLayout>
